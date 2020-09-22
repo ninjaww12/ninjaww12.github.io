@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ninjaww's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="nav-wrapper">
+        <div class="left-side">
+            <div class="nav-link-wrapper active-nav-link">
+                <a href="index.html">Home</a>
+            </div>
+            <div class="nav-link-wrapper">
+                <a href="about.html">About</a>
+            </div>
+        </div>
+
+        <div class="right-side">
+            <div class="brand">
+                <div>Панайот Христов</div>
+            </div>
+        </div>        
+    </div>   
+    
+    <div class="content-wrapper">
+        <div class="portfolio-items-wrapper">
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/christopher-gower-m_HRfLhgABo-unsplash.jpg)">
+                </div>
+                
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="logos/codepen-brands.png"  alt="">
+                    </div>
+                    
+
+                    <div class="subtitle">
+                    I build the website and i'm not even a Jr.
+                </div>
+            </div>
+
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/fernando-hernandez-JdoofvUDUwc-unsplash.jpg)">
+                </div>
+                
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="logos/codepen-brands.png"  alt= "">
+                    </div>
+                
+                    <div class="subtitle">
+                    I build the website and i'm not even a Jr.
+                </div>
+            </div>
+
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/ilya-pavlov-OqtafYT5kTw-unsplash.jpg)">
+                </div>
+                
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="logos/codepen-brands.png"  alt="">
+                    </div>
+                
+
+                    <div class="subtitle">
+                    I build the website and i'm not even a Jr.
+                </div>
+            </div>
+
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/joshua-reddekopp-SyYmXSDnJ54-unsplash.jpg)">
+                </div>
+                
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="logos/codepen-brands.png"  alt="">
+                    </div>
+                
+
+                    <div class="subtitle">
+                    I build the website and i'm not even a Jr.
+                </div>
+            </div>
+
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/markus-spiske-iar-afB0QQw-unsplash.jpg)">
+                </div>
+                
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="logos/codepen-brands.png" alt="">
+                    </div>
+                
+
+                    <div class="subtitle">
+                    I build the website and i'm not even a Jr.
+                </div>
+            </div>
+
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/nesa-by-makers-IgUR1iX0mqM-unsplash.jpg)">
+                </div>
+                
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="logos/codepen-brands.png"  alt="">
+                    </div>
+                
+
+                    <div class="subtitle">
+                    I build the website and i'm not even a Jr.
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+</div>
+</body>
+
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+  
+    portfolioItems.forEach(portfolioItem => {
+      portfolioItem.addEventListener('mouseover', () => {
+        console.log(portfolioItem.childNodes[1].classList)
+        portfolioItem.childNodes[1].classList.add('image-blur');
+      });
+  
+      portfolioItem.addEventListener('mouseout', () => {
+        console.log(portfolioItem.childNodes[1].classList)
+        portfolioItem.childNodes[1].classList.remove('image-blur');
+      });
+    });
+  
+  </script>
+  
+  </html>
